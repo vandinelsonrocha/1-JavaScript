@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exerça seu direito ao voto</title>
+</head>
+<body>
+    <h2>Direito de voto</h2>
+    <p>Todo o cidadão maoir de 17 anos tem o direito ou a obrigatoriedade de votar. <br/> Digite a sua idade na caixinha abaixo:</p>
+    <input type="number" name="num1" id="num1">
+    <input type="button" value="Verificar" onClick='verIdade()'>
+    <div id='res'></div>
+
+
+    <script>
+        function verIdade()  {
+            var res = window.document.querySelector('div#res')
+            var idade = window.document.querySelector('input#num1')
+            idade = Number(idade.value)
+            res.innerHTML = `Você tem ${idade} ano(s). `
+
+            if (idade>=0 && idade<16)  {
+                res.innerHTML += 'Não vota.'
+            } else if (idade>=16 && idade<18 || idade>65)  {
+                res.innerHTML += 'Voto opcional.'
+            } else  {
+                res.innerHTML += 'Voto obrigatório.'
+            }
+
+        }
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular média</title>
+</head>
+<body>
+    
+</body>
+    <h3><strong>Média</strong></h3>
+
+    <p>Calcule a média de diversas notas digitadas pelo usuário</p>
+
+    <script>
+        
+        var nome = window.prompt('Olá, digite o seu nome: ' +nome)
+        window.alert(`Seja bem-vindo, ${nome}!`)
+        window.alert(`${nome}, para calcular a média deste semestre, terá de digitar as notas correspondentes as 6 disciplinas.`)
+        var amIII = Number(prompt('Digite a nota em Análise matemática III: ' +amIII))
+        var IRC = Number(prompt('Digite a nota em IRC: ' +IRC))
+        var FIA = Number(prompt('Digiate a nota de FIA: ' +FIA))
+        var PDM = Number(prompt('Digite a nota de PDM: ' +PDM))
+        var PA = Number(prompt('Digite a nota de Propagação e Antenas: ' +PA))
+        var ICSE = Number(prompt('Digite a nota de ICSE: ' +ICSE))
+        
+        var media = (amIII + IRC + FIA + PDM + PA + ICSE) / 6
+        Number(alert(`A sua média deste semestre é: ${media.toFixed(2).replace('.',',')} valores`))
+
+        document.writeln(`Parabéns, ${nome}, pela média de ${media.toFixed(2).replace('.',',')} valores obtido este semestre!`)
+
+    </script>
+</html>

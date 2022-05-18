@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pauta</title>
+</head>
+<body>
+    <h2>Universidade: curso LEIT - 1º ano</h2>
+    <h4>-----Veja a sua pauta-----</h4>
+    
+</body>
+
+    <script>
+        var anoCurso = window.prompt('Se frequenta o 1º ano do curso, digite 1. '+anoCurso)
+        var semestre = window.prompt('Para o primeiro semestre, digite: 1º semestre. Para o segundo semestre, digite: 2º semestre. '+semestre)
+        if (anoCurso==1 && semestre=='1º semestre')  {
+            var IEIT = Number(window.prompt('Nota em IEIT: '+IEIT))
+            var IP = Number(window.prompt('Nota em IP: '+IP))
+            var AMI = Number(window.prompt('Nota em AMI: '+AMI))
+            var ALGA = Number(window.prompt('Nota em ALGA: '+ALGA))
+            var SD = Number(window.prompt('Nota em SD: '+SD))
+
+            var media = (IEIT+IP+AMI+ALGA+SD) / 5
+
+            if (media>=10 && media<=20)  {
+                Number.parseInt(document.writeln(`A sua média é: ${media.toFixed(0).replace('.',',')} valores.`+'<br/>'))
+                document.writeln('Aprovado, parabéns!')
+                } else if (media<10 && media>=0)  {
+                    Number.parseInt(document.writeln(`A sua média é: ${media.toFixed(0).replace('.',',')} valores.`+'<br/>'))
+                    document.writeln('Reprovado, tenta o sucesso no exame ou no recurso!')
+                } else  {
+                    document.writeln('ERRO! Verifique os valores que introduziu.')
+                }
+        }
+        else if (anoCurso==1 && semestre=='2º semestre')  {
+            var MD = Number(window.prompt('Nota em MD: '+MD))
+            var MTC = Number(window.prompt('Nota em IP: '+MTC))
+            var AMII = Number(window.prompt('Nota em AMII: '+AMII))
+            var MV = Number(window.prompt('Nota em ALGA: '+MV))
+            var AED = Number(window.prompt('Nota em SD: '+AED))
+
+            var media = (MD+MTC+AMII+MV+AED) / 5
+
+            if (media>=10 && media<=20)  {
+                Number.parseInt(document.writeln(`A sua média é: ${media.toFixed(0).replace('.',',')} valores.`+'<br/>'))
+                document.writeln('Aprovado, parabéns!')
+                } else if (media<10 && media>=0)  {
+                    Number.parseInt(document.writeln(`A sua média é: ${media.toFixed(0).replace('.',',')} valores.`+'<br/>'))
+                    document.writeln('Reprovado, tenta o sucesso no exame ou no recurso!')
+                } else  {
+                    document.writeln('ERRO! Verifique os valores que introduziu!')
+                }
+        } else  {
+            document.writeln('ERRO! Verifique se colocou o ano e/ou o semestre corretamente.')
+            }
+    </script>    
+    
+</html>

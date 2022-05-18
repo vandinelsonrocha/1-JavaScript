@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Múltiplas ações</title>
+
+    <style>
+        input  {
+            width: 190px;
+            height: 70px;
+            font-size: 18px;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Múltiplas ações</h1>
+    <div id="bot">
+        <input type="button" value="Clique para iniciar">
+    </div>
+    <p id="res">Clique no botão acima para continuar.</p>
+
+    <script>
+        let bot = document.getElementById('bot')
+        bot.addEventListener('click', multAcoes)
+
+        function multAcoes()  {
+            let calcular = document.getElementById('res')
+            let valor1 = Number(prompt('Primeiro valor:'))
+            let valor2 = Number(prompt('Segundo valor:'))
+            let escolha = Number(prompt(`Valores informados: ${valor1} e ${valor2}.\nO que vamos fazer?\n[1] Somar\n[2] Subtrair\n[3] Dividir\n[4] Multiplicar`))
+            calcular.innerHTML = 'Calculando...<br><br>'
+            switch(escolha)  {
+                case 1:
+                    calcular.innerHTML += `${valor1} + ${valor2} = <strong>${(valor1+valor2).toLocaleString('pt-BR')}</strong>`
+                    break
+                case 2:
+                    calcular.innerHTML += `${valor1} - ${valor2} = <strong>${(valor1-valor2).toLocaleString('pt-BR')}</strong>`
+                    break
+                case 3:
+                    calcular.innerHTML += `${valor1} : ${valor2} = <strong>${(valor1/valor2).toLocaleString('pt-BR')}</strong>`
+                    break
+                case 4:
+                    calcular.innerHTML += `${valor1} x ${valor2} = <strong>${(valor1*valor2).toLocaleString('pt-BR')}</strong>`
+                    break
+                default:
+                    calcular.innerHTML += `OPÇÃO INVÁLIDA! Você digitou ${valor1} e ${valor2}, mas não sei o que fazer com eles.`
+                    break
+            }
+        }
+/*toLocaleString() => para um resultado com muitas casas decimais, este método arredonda a 3ª casa decimal por defeito ou por excesso,
+  conforme for o resultado e ainda substitui o ponto por vírgula*/
+    </script>
+</body>
+</html>

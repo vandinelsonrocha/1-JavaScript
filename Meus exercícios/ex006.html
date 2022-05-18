@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saiba as horas</title>
+</head>
+<body>
+    <h2>Horário atual</h2>
+    <p>Que horas são?</p>
+    <input type="number" name="numb1" id="numb1">horas    
+    <input type="button" value="Ver" onClick='comprimentar()'>
+    <div id='res'></div>
+
+    <script>
+        function comprimentar()  {
+            var res = window.document.getElementById('res')
+            var hora = window.document.querySelector('input#numb1')
+            hora = Number(hora.value)
+            res.innerHTML = `São <strong>${hora}</strong> hora(s). `
+            res.style.background = 'blue'
+            var corpo = document.body
+            corpo.style.color = 'orange'
+            corpo.style.background = 'green'
+
+            if (hora>=6 && hora<12)  {
+                res.innerHTML += 'Bom dia!'
+            } else if (hora>=12 && hora<=18)  {
+                res.innerHTML += 'Boa tarde!'
+            } else if (hora>18 && hora<=24)  {
+                res.innerHTML += 'Boa noite!'
+            } else  {
+                res.innerHTML += 'Boa madrugada!'
+            }
+        }
+        
+    </script>
+    
+</body>
+</html>

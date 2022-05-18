@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transportes</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Verificador de meio de transporte</h1>
+    </header>
+
+    <section>
+        <div>
+            <p> <strong>Preencha os dados abaixo para ver os resultados:</strong> </p>
+            <p>País de fabrico:
+                <input type="text" name="txtpais" id="txtpais">
+            </p>
+            <p>Transporte:
+                <input type="radio" name="radsex" id="av" checked>
+                <label for="av">Avião</label>
+                <input type="radio" name="radsex" id="bi">
+                <label for="bi">Bicicleta</label>
+                <input type="radio" name="radsex" id="car">
+                <label for="car">Carro</label>
+                <input type="radio" name="radsex" id="ba">
+                <label for="ba">Barco</label>
+                <input type="radio" name="radsex" id="fo">
+                <label for="fo">Foguete</label>
+            </p>
+            <p>
+                <input id="bot" type="button" value="Ver" onClick="clicar()">
+            </p>
+        </div>
+
+        <div id="res">
+
+        </div>
+    </section>
+
+    <footer>
+        <p> <strong>Seja um programador</strong> </p>
+    </footer>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

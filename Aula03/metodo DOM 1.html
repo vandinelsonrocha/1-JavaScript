@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>por marca_por tag name</title>
+</head>
+<body>
+    <h1>Iniciando estudos DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em Javascript!</p>
+    <div>Clique em mim</div> 
+
+    <!-- getElementsByTagName -->
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[0]
+        var p2 = document.getElementsByTagName('p')[1]
+        var corpo = window.document.body
+
+        window.document.write('Está escrito assim: '+p1.innerText +'</br>')
+        p1.style.color = 'blue'
+        p1.style.background = 'yellow'
+        document.write(p2.innerText +'</br>')
+        document.write(p2.innerHTML)
+        window.alert(p2.innerText)
+        corpo.style.background = 'green' //muda o background/cor de fundo da página
+    </script> 
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados com JS</title>
+
+    <style>
+        input  {
+            width: 200px;
+            height: 80px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Dados v2.0</h1>
+    <input type="button" value="Clique para começar" onClick="clicar()">
+    <div id="res">Aqui vai aparecer o resultado...</div>
+
+    <script>
+        function clicar()  {
+            var txt = document.querySelector('div#res')
+            var nome = prompt('Qual é o seu nome?')
+            txt.innerHTML = `Olá, <strong>${nome}</strong>! É um prazer te conhecer!`
+        }
+    </script>
+    
+</body>
+</html>

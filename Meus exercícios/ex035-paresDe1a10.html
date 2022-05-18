@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contando de 1 a 10</title>
+
+    <style>
+        strong  {
+            background-color: yellow;
+        }
+        div#bot  {
+            background: rgb(208, 210, 212);
+            width: 170px;
+            height: 70px;
+            line-height: 70px;
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Contando de 1 a 10 (marcando os pares)</h1>
+    <div id="bot">
+        <p></p>Contar de 1 a 10</p>
+    </div>
+    <p id="res">Aperte o botão acima para contar.<br><br></p>
+
+    <script>
+        let bot = document.querySelector('div#bot')
+        bot.addEventListener('click', contar)
+        let result = document.querySelector('p#res')
+
+        function contar()  {
+            result.innerHTML += '<h3>Contando de 1 até 10, marcando os pares:</h3>'
+            for(let i=1, j=2; i<=10, j<=10; i+=2, j+=2)  {
+                result.innerHTML += `${i}\u{1F449} <strong>${j}</strong>\u{1F449} `
+            }
+            result.innerHTML += `\u{1F3C1}`
+        }
+    </script>
+    
+</body>
+</html>

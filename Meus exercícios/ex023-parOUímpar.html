@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O número é par ou ímpar?</title>
+
+    <style>
+        input  {
+            width: 190px;
+            height: 85px;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>É par ou é ímpar?</h1>
+    <input type="button" value="Clique para iniciar" onclick="clicar()">
+    <p class="res">O resultado vai aparecer aqui...</p>
+
+    <script>
+        function clicar()  {
+            let result = document.querySelector('p.res')
+            let num = Number.parseFloat(prompt('Digite um número:'))
+            if(num%2==0)  {
+                result.innerHTML = `O número ${num} que digitou é <strong>PAR</strong>!`
+            } else  {
+                result.innerHTML = `O número ${num} que digitou é <strong>ÍMPAR</strong>!`
+            }
+        }
+        </script>
+    
+</body>
+</html>

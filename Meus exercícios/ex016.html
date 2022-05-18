@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+
+    <style>
+        div#res {
+            font: normal 20pt italic;
+            background: rgb(114, 192, 216);
+            color: white;
+            width: 700px;
+            height: 170px;
+            text-align: center;
+        }
+        div#resp {
+            font: normal 20pt italic;
+            background: rgb(114, 192, 216);
+            color: white;
+            width: 700px;
+            height: 170px;
+            text-align: center;
+            margin-top: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="res">Clique aqui para digitar os dados do Bruno Rocha</div>
+    <div id="resp">Clique aqui para digitar os dados do Vandinelson Gomes</div>
+
+    <script>
+        var b = document.getElementById('res')
+        b.addEventListener('click', clicar)
+        var v = document.getElementById('resp')
+        v.addEventListener('click', clica)
+
+        function clicar()  {
+            var idade = Number.parseInt(prompt('Idade: '+idade))
+            var sexo = prompt('Sexo: '+sexo)
+            var media = Number.parseInt(prompt('Média: '+media))
+            b.innerHTML = 'Dados do Bruno Rocha:</br></br>'
+            b.innerHTML += `Bruno tem ${idade} anos de idade.</br>`
+            b.innerHTML += `Bruno é do sexo ${sexo}.</br>`
+            b.innerHTML += `Teve a média de ${media} valores.`
+        }
+        function clica()  {
+            var idade = Number.parseInt(prompt('Idade: '+idade))
+            var sexo = prompt('Sexo: '+sexo)
+            var media = Number.parseInt(prompt('Média: '+media))
+            v.innerHTML = 'Dados do Vandinelson Rocha:</br></br>'
+            v.innerHTML += `Vandinelson tem ${idade} anos de idade.</br>`
+            v.innerHTML += `Vandinelson é do sexo ${sexo}.</br>`
+            v.innerHTML += `Teve a média de ${media} valores.`
+        }
+    </script>
+
+</body>
+</html>

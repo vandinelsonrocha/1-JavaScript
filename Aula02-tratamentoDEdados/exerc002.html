@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Script#02</title>
+
+    <!--Estilo/Stile - CSS
+    em CSS toda final de instrução tem (;)-->
+
+    <style>
+        body  {
+            background-color: rgb(94, 94, 180);
+            color: white;
+            font: normal 20pt Arial;
+        }
+        h1  {
+            color: rgb(230, 230, 21)
+        }
+    </style>
+
+</head>  
+<body>
+    <h1>Olá mundo!</h1>
+    <p>Já me livrei da maldição...</p>
+
+    <!--tag SCRIPT, pra JAVASCRIPT
+    em JS a final de cada instrução pode ou não ter (;)-->
+    <script>
+        
+        /*var nome = window.prompt("Qual é o seu nome?") //dá a opção de OK ou Cancelar
+        window.alert("É um prazer te conhecer, " +nome)
+        prompt("Você gosta de programar, " +nome +"?")
+        alert("Obaa, eu também gosto!!")   */
+        
+        var num1 = Number.parseInt(window.prompt("Digite um número: " +num1))
+        var num2 = Number.parseInt(window.prompt("Digite outro número: " +num2))
+        var soma = num1+num2
+        //soma = window.alert("A soma de " + num1 + " com " + num2 + " é " + soma + ".")
+        soma = alert(`A soma de ${num1} com ${num2} é ${soma}`)
+        
+        //soma = window.alert("Soma = " +soma.toString()) //Convertendo o valor da soma para string */
+        soma = alert("Soma = " +String(soma))
+    </script>
+
+</body>
+</html>

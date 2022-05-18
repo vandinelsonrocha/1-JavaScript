@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maior valor</title>
+
+    <style>
+        input  {
+            width: 190px;
+            height: 85px;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Maior valor</h1>
+    <input type="button" value="Clique para começar" onclick="maior()">
+    <p id="res">O resultado vai aparecer aqui...</p>
+
+    <script>
+        function maior(num1, num2)  {
+            let result = document.getElementById('res')
+            num1 = Number(prompt('Digite um número:'))
+            num2 = Number(prompt('Digite outro número:'))
+            if(num1 == num2)  {
+                result.innerHTML = `Analisando os valores ${num1} e ${num2}, ambos são <strong>IGUAIS</strong>`
+            } else if(num1>num2)  {
+                result.innerHTML = `Analisando os valores ${num1} e ${num2}, o maior valor é <strong>${num1}</strong> ` 
+            } else  {
+                result.innerHTML = `Analisando os valores ${num1} e ${num2}, o maior valor é <strong>${num2}</strong> ` 
+            }
+        }
+    </script>
+    
+</body>
+</html>

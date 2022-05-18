@@ -1,0 +1,10 @@
+input.but  {
+    margin-left: 11px;
+}
+
+input#but1  {
+    background: green;
+    color: white;
+    width: 70px;
+    height: 40px;
+}

@@ -1,0 +1,88 @@
+switch(mes)  {
+        case 0:
+            res.innerHTML += 'Mês: Jan <br><br>'
+            break
+        case 1:
+            res.innerHTML += 'Mês: Fev <br><br>'
+            break
+        case 2:
+            res.innerHTML += 'Mês: Mar <br><br>'
+            break
+        case 3:
+            res.innerHTML += 'Mês: Abr <br><br>'
+            break
+        case 4:
+            res.innerHTML += 'Mês: Mai <br><br>'
+            break
+        case 5:
+            res.innerHTML += 'Mês: Jun <br><br>'
+            break
+        case 6:
+            res.innerHTML += 'Mês: Jul <br><br>'
+            break
+        case 7:
+            res.innerHTML += 'Mês: Ago <br><br>'
+            break
+        case 8:
+            res.innerHTML += 'Mês: Set <br><br>'
+            break
+        case 9:
+            res.innerHTML += 'Mês: Out <br><br>'
+            break
+        case 10:
+            res.innerHTML += 'Mês: Nov <br><br>'
+            break
+        default:
+            res.innerHTML += 'Mês: Dez <br><br>'
+            break
+    }
+
+
+
+   if(mes==0 || diaSem==0)  {
+        res.innerHTML += 'Mês: Jan <br><br>'
+        res.innerHTML += 'Dia da semana: Dom <br><br>'
+   }
+   else if(mes==1 || diaSem==1)  {
+        res.innerHTML += 'Mês: Fev <br><br>'
+        res.innerHTML += 'Dia da semana: Seg <br><br>'
+   } 
+   else if(mes==1 || diaSem==1)  {
+        res.innerHTML += 'Mês: Fev <br><br>'
+        res.innerHTML += 'Dia da semana: Seg <br><br>'
+   } 
+   else if(mes==2 || diaSem==2)  {
+        res.innerHTML += 'Mês: Mar <br><br>'
+        res.innerHTML += 'Dia da semana: Ter <br><br>'
+   } 
+   else if(mes==3 || diaSem==3)  {
+        res.innerHTML += 'Mês: Abr <br><br>'
+        res.innerHTML += 'Dia da semana: Qua <br><br>'
+   } 
+   else if(mes==4 || diaSem==4)  {
+        res.innerHTML += 'Mês: Mai <br><br>'
+        res.innerHTML += 'Dia da semana: Qui <br><br>'
+   } 
+   else if(mes==5 || diaSem==5)  {
+        res.innerHTML += 'Mês: Jun <br><br>'
+        res.innerHTML += 'Dia da semana: Sex <br><br>'
+   }
+   else if(mes==6 || diaSem==6)  {
+        res.innerHTML += 'Mês: Jul <br><br>'
+        res.innerHTML += 'Dia da semana: Sáb <br><br>'
+   }
+   else if(mes==7)  {
+        res.innerHTML += 'Mês: Ago <br><br>'
+   }
+   else if(mes==8)  {
+        res.innerHTML += 'Mês: Set <br><br>'
+   }
+   else if(mes==9)  {
+        res.innerHTML += 'Mês: Out <br><br>'
+   }
+   else if(mes==10)  {
+        res.innerHTML += 'Mês: Nov <br><br>'
+   }
+   else  {
+        res.innerHTML += 'Mês: Dez <br><br>'
+   }

@@ -1,0 +1,9 @@
+1 - fazer o curso de HTML5 e CSS3 do Guanabara
+2 - estudar muito mais sobre funções (arrow functions, callbacks, funções anónimas, javascript funcional)
+3 - OO em javascript
+4 - modularização (código em arquivos separados)
+5 - RegEx (expressões regulares)
+6 - JSON
+7 - AJAX
+8 - NodeJS
+9 - bibliotecas e frameworks (react, angular, vue...)

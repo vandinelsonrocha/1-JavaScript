@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Números com JS</title>
+
+    <style>
+        input  {
+            width: 190px;
+            height: 80px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Vários cálculos em JS</h1>
+    <input type="button" value="Clique para calcular" onClick="clicar()">
+    <div id="res">O resultado vai aparecer aqui...</div>
+
+    <script>
+        function clicar()  {
+            var calc = document.getElementById('res')
+            var num = Number(prompt('Digite um número: '+num))
+
+            calc.innerHTML = `O número a ser analisado aqui será o <strong>${num}</strong></br>`
+            calc.innerHTML += '-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</br>'
+            calc.innerHTML += `O seu valor absoluto é ${num}</br>`
+            calc.innerHTML += `A sua parte inteira é ${Math.trunc(num)}</br>`
+            calc.innerHTML += `O valor inteiro mais próximo é ${Math.round(num)}</br>`
+            calc.innerHTML += `A sua raíz quadrada é ${Math.sqrt(num)}</br>`
+            calc.innerHTML += `A sua raíz cúbica é ${Math.cbrt(num)}</br>`
+            calc.innerHTML += `O valor de ${num}^2 é ${num*num}</br>`
+            calc.innerHTML += `O valor de ${num}^3 é ${num*num*num}</br>`
+        }
+    </script>
+
+</body>
+</html>

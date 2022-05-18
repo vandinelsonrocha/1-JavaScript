@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversão de valores</title>
+
+    <style>
+        div {
+            margin-top: 20px;
+        }
+    </style>
+
+</head>
+<body>
+    
+</body>
+    <h2>Conversão de Euro para CVE</h2>
+    <h4>Digite o valor em Euro na caixinha em branco abaixo:</h4>
+    <input type="number" name="valor" id="valor">
+    <input type="button" value="Converter" onClick='conversao()'>
+    <div id='conv'></div>
+
+    <script>
+        function conversao()  {
+            var val = window.document.getElementById('valor')
+            var conv = window.document.getElementById('conv')
+            var quantia = Number(val.value)
+            var euroParaCVE = quantia * 110.26
+            conv.innerText = `${quantia} Euros equivale a ${euroParaCVE.toFixed(2).replace('.',',')} CVE.`
+        }
+    </script>
+
+</html>

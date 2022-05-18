@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>por nome</title>
+</head>
+    <div name='msg'>Clique em mim</div>
+    <div name='msg'>Clique em mim</div>
+<body>
+
+    <!-- getElementsByName -->
+    <script>
+        var d = window.document.getElementsByName('msg')[0]
+        var v = window.document.getElementsByName('msg')[1]
+        d.style.background = 'yellow'
+        d.style.color = 'orange'
+        document.write('Está escrito: '+d.innerText +'</br')
+        v.innerText = 'Eu sou o Vandinelson'
+
+    </script>
+    
+</body>
+</html>

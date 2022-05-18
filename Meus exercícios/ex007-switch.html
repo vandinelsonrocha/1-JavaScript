@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saiba que dia é hoje</title>
+</head>
+<body>
+    <h2>Dia de hoje</h2>
+    <h4>Digite um número inteiro de 0 à 6 na caixinha abaixo:</h4>
+    <input type="number" name="numb1" class="numb1">
+    <input type="button" value="Ver" onClick='diaSemana()'>
+    <div class='msg'>Olá.</div>
+    <script>
+        function diaSemana()  {
+            var numero = window.document.getElementsByClassName('numb1')[0]
+            var msg = window.document.getElementsByClassName('msg')[0]
+            numero = Number(numero.value)
+            switch(numero)  {
+                case 0:arguments
+                    msg.innerHTML += ' 0 - Hoje é domingo.'
+                    break
+                case 1:arguments
+                    msg.innerHTML += ' 1 - Hoje é segunda-feira.'
+                    break
+                case 2:arguments
+                    msg.innerHTML += ' 2 - Hoje é terça-feira.'
+                    break
+                case 3:arguments
+                    msg.innerHTML += ' 3 - Hoje é quarta-feira.'
+                    break
+                case 4:arguments
+                    msg.innerHTML += ' 4 - Hoje é quinta-feira.'
+                    break
+                case 5:arguments
+                    msg.innerHTML += ' 5 - Hoje é sexta-feira.'
+                    break
+                case 6:arguments
+                    msg.innerHTML += ' 6 - Hoje é sábado.'
+                default:arguments
+                    msg.innerHTML = '[ERRO] Dia inválido!'
+                    break
+
+            }
+        }
+    </script>
+    
+</body>
+</html>
